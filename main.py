@@ -9,19 +9,21 @@ def sum_of_products(list1, list2):
 
 if __name__ == '__main__':
     num_1 = input()
-    if num_1.isdigit() == False:
+    if num_1 == False:
         exit()
     num_2 = input()
-    if num_2.isdigit() == False:
+    if num_2 == False:
         exit()
+    list1 = num_1.split()
+    list2 = num_2.split()
     list1 = [int(x) for x in (num_1)]
     list2 = [int(x) for x in (num_2)]
     res = 0
     try:
         test = len(list1)
-        list2[test]
+        list2[test-1]
         test = len(list2)
-        list1[test]
+        list1[test-1]
         print(sum_of_products(list1, list2))
     except:
         print("Error")
