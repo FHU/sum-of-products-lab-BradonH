@@ -10,8 +10,8 @@ def sum_of_products(list1, list2):
 if __name__ == '__main__':
     num_1 = input("first number")
     num_2 = input("second number")
-    list1 = [int(x) for x in str(num_1)]
-    list2 = [int(x) for x in str(num_2)]
+    list1 = [int(x) for x in (num_1)]
+    list2 = [int(x) for x in (num_2)]
     res = 0
     if len(list1) != len(list2):
        exit
