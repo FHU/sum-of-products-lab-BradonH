@@ -12,7 +12,7 @@ if __name__ == '__main__':
     num_2 = input()
     list1 = num_1.split()
     list2 = num_2.split()
-    list1 = [int(x) for x in (num_1)]
-    list2 = [int(x) for x in (num_2)]
+    list1 = [int(x) for x in (list1)]
+    list2 = [int(x) for x in (list2)]
     res = 0
     print(sum_of_products(list1, list2))
