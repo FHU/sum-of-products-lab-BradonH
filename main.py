@@ -3,8 +3,8 @@
 def sum_of_products(list1, list2):
     
     res = 0
-    for i in range(len(list1)):
-        res += list1[i-1]*list2[i-1]
+    for i in range(len(list2)):
+        res += list1[i]*list2[i]
     return res
 
 if __name__ == '__main__':
@@ -17,10 +17,8 @@ if __name__ == '__main__':
     list1 = [int(x) for x in (num_1)]
     list2 = [int(x) for x in (num_2)]
     res = 0
-    if len(list1) != len(list2):
-       exit()
-    else:
-       pass
-
-    print(sum_of_products(list1, list2))
+    try:
+        print(sum_of_products(list1, list2))
+    except:
+        print("Error")
 
