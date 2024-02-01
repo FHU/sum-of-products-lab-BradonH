@@ -8,17 +8,17 @@ def sum_of_products(list1, list2):
     return res
 
 if __name__ == '__main__':
-    num_1 = input("first number")
+    num_1 = input()
     if num_1.isdigit() == False:
         exit()
-    num_2 = input("second number")
+    num_2 = input()
     if num_2.isdigit() == False:
         exit()
     list1 = [int(x) for x in (num_1)]
     list2 = [int(x) for x in (num_2)]
     res = 0
     if len(list1) != len(list2):
-       exit
+       exit()
     else:
        pass
 
