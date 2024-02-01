@@ -9,7 +9,11 @@ def sum_of_products(list1, list2):
 
 if __name__ == '__main__':
     num_1 = input("first number")
+    if num_1.isdigit() == False:
+        exit()
     num_2 = input("second number")
+    if num_2.isdigit() == False:
+        exit()
     list1 = [int(x) for x in (num_1)]
     list2 = [int(x) for x in (num_2)]
     res = 0
