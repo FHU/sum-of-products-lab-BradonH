@@ -16,3 +16,4 @@ if __name__ == '__main__':
     list2 = [int(x) for x in (list2)]
     res = 0
     print(sum_of_products(list1, list2))
+#test
